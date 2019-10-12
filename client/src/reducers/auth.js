@@ -43,15 +43,8 @@ export default function(state = initialState, action) {
     case AUTH_ERROR:
     case LOGIN_FAIL:
     case LOGOUT:
-      localStorage.removeItem('token');
-
     case CLEAR_PROFILE:
-      return {
-        ...state,
-        profile: null,
-        repos: [],
-        loading: false
-      };
+      localStorage.removeItem('token');
 
       return {
         ...state,
