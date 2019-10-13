@@ -342,6 +342,9 @@ router.get('/github/:username', (req, res) => {
       headers: { 'user-agent': 'node.js' }
     };
 
+    // console.log(options);
+    console.log('ok');
+
     request(options, (error, response, body) => {
       if (error) console.error(error);
 
