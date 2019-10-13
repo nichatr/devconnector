@@ -30,11 +30,6 @@ const AddEducation = ({ addEducation, history }) => {
   const onChange = e =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const onSubmit = e => {
-    e.preventDefault();
-    addEducation(formData, history);
-  };
-
   return (
     <Fragment>
       <h1 className='large text-primary'>Add Your Education</h1>
